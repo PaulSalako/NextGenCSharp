@@ -1,0 +1,7 @@
+C:\Csharp\MyFirstProgram\MyFirstProgram\bin\Debug\MyFirstProgram.exe.config
+C:\Csharp\MyFirstProgram\MyFirstProgram\bin\Debug\MyFirstProgram.exe
+C:\Csharp\MyFirstProgram\MyFirstProgram\bin\Debug\MyFirstProgram.pdb
+C:\Csharp\MyFirstProgram\MyFirstProgram\obj\Debug\MyFirstProgram.csproj.AssemblyReference.cache
+C:\Csharp\MyFirstProgram\MyFirstProgram\obj\Debug\MyFirstProgram.csproj.CoreCompileInputs.cache
+C:\Csharp\MyFirstProgram\MyFirstProgram\obj\Debug\MyFirstProgram.exe
+C:\Csharp\MyFirstProgram\MyFirstProgram\obj\Debug\MyFirstProgram.pdb
