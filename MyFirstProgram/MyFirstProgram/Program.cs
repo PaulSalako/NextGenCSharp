@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -337,6 +338,12 @@ namespace MyFirstProgram
             }
             */
 
+
+            //SIMPLE CALCULATOR
+            /*
+           do
+           {
+
             double num1 = 0;
             double num2 = 0;
             double result = 0;
@@ -345,10 +352,232 @@ namespace MyFirstProgram
             Console.WriteLine("Calculator Program");
             Console.WriteLine("--------------------");
 
+            Console.WriteLine("Enter First number:");
+            num1 = Convert.ToInt32(Console.ReadLine());
 
+            Console.WriteLine("Enter Second number:");
+            num2 = Convert.ToInt32(Console.ReadLine());
+
+
+            Console.WriteLine("Select an Option:");
+            Console.WriteLine("\t+ : Add");
+            Console.WriteLine("\t- : Subtract");
+            Console.WriteLine("\t* : Multiply");
+            Console.WriteLine("\t/ : Divide");
+            Console.WriteLine("\t% : Remainder");
+
+            
+                switch (Console.ReadLine())
+                {
+                    case "+":
+                        result = num1 + num2;
+                        Console.WriteLine($"Your result: {num1} + {num2} = {result}");
+                        break;
+
+                    case "-":
+                        result = num1 - num2;
+                        Console.WriteLine($"Your result: {num1} - {num2} = {result}");
+                        break;
+
+                    case "*":
+                        result = num1 * num2;
+                        Console.WriteLine($"Your result: {num1} * {num2} = {result}");
+                        break;
+
+                    case "/":
+                        result = num1 / num2;
+                        Console.WriteLine($"Your result: {num1} / {num2} = {result}");
+                        break;
+
+                    case "%":
+                        result = num1 % num2;
+                        Console.WriteLine($"Your result: {num1} % {num2} = {result}");
+                        break;
+
+                    default:
+                        Console.WriteLine("Please enter an option");
+                        break;
+
+
+                }
+                Console.WriteLine("Would you like to continue? (Y = yes, N = No):");
+            }
+            while (Console.ReadLine().ToUpper() == "Y");
+
+            Console.WriteLine("Bye");
+
+            */
+
+
+            /*
+
+            //ARRAY
+
+            //string[] cars = { "BMW", "Benz", "Toyota", "Van" };
+
+            //Console.WriteLine(cars);
+
+            //cars[0] = "Camry"; //This modifies the content of the 0 index
+
+            //Console.WriteLine(cars[0]);
+            //Console.WriteLine(cars[1]);
+            //Console.WriteLine(cars[2]);
+            //Console.WriteLine(cars[3]);
+
+            //Printing all the result instead of fetching one after other
+
+
+            //Array as fix size so to set it to unlimited
+
+            String[] cars = new string[5];
+
+            cars[0] = "BMW";
+            cars[1] = "Toyota";
+            cars[2] = "Benz";
+            cars[3] = "Convetable";
+            cars[4] = "None";
+
+
+            //for (int i = 0; i < cars.Length; i++)
+            //{
+            //    Console.WriteLine(cars[i]);
+            //}
+
+            //USING FOR EACH
+
+            foreach (string car in cars)
+            {
+                Console.WriteLine(car);
+            }
+
+            */
+
+            /*
+
+            //METHODS
+
+            string name = "Paul";
+            int age = 10;
+            bool alive = true;
+            singHappyBirthday(name,age,alive); // passing the argument speerated with comma
+
+            */
+
+
+            /* 
+             
+            // RETURN 
+
+            double x;
+            double y;
+            double result;
+
+            Console.WriteLine("Enter first number: ");
+            x = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Enter second number:");
+            y = Convert.ToDouble(Console.ReadLine());
+
+            result = Multiply(x, y);
+
+            Console.WriteLine($"The result of {x} * {y} is = {result} ");
+
+            */
+
+
+
+            /*
+
+            // TRY AND CATCH
+
+            double x;
+            double y;
+            double result;
+
+            try
+            {
+                Console.WriteLine("Enter number 1: ");
+                x = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Enter number 2: ");
+                y = Convert.ToDouble(Console.ReadLine());
+
+                result = x / y;
+
+                Console.WriteLine("Result: " + result);
+
+                Console.ReadKey();
+            }
+            //catch (FormatException) 
+            //{
+            //    Console.WriteLine("Enter ONLY numbers PLEASE");
+            //}
+            //catch(DivideByZeroException)  // THis works with int
+            //{
+            //    Console.WriteLine("You cannot divide by ZERO!");
+            //}
+            catch (Exception)
+            {
+                Console.WriteLine("Something went wrong");
+            }
+            finally 
+            {
+                Console.WriteLine("Thannk you for visiting"); ;
+            }
+            */
+
+
+
+            //CONDITIONAL OPERATOR
+
+            
+            string message;
+
+            Console.WriteLine("Enter temp number");
+
+            double tempRes = Convert.ToDouble(Console.ReadLine());
+
+            //if(tempRes >= 15)
+            //{
+            //    message = "It's warm outside!";
+            //}
+            //else
+            //{
+            //    message = "It's cold outside";
+            //}
+
+            //Console.WriteLine(message);
+
+            message = (tempRes >= 15) ? "It's warm outside!" : "It's cold outside";
+            Console.WriteLine(message);
 
 
             Console.ReadKey();
         }
+
+    
+        /*
+        static void singHappyBirthday(string name, int age, bool alive) //pasing the param
+        {
+            Console.WriteLine("Happy birthday to you!");
+            Console.WriteLine("Happy birthday to you!" + name);
+            Console.WriteLine("You are now " + age + " years old");
+            Console.WriteLine("Am alive " + alive);
+            Console.WriteLine();
+
+        } */
+
+        /*
+        static double Multiply(double x, double y)
+        {
+            double z = x * y;
+            return z;
+        }
+        */
+
+
+
+        
+        
     }
 }
